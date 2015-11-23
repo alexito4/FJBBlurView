@@ -6,8 +6,8 @@
 //  Copyright (c) 2014 FJBelchi. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
-#import "GPUImage.h"
+@import Foundation;
+#import <GPUImage/GPUImage.h>
 
 typedef NS_ENUM(NSInteger, FJBBlurStyle) {
     FJBBlurStyleGaussianBlur,

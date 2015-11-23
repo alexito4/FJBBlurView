@@ -6,7 +6,8 @@
 //  Copyright (c) 2014 FJBelchi. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+@import Foundation;
+#import <GPUImage/GPUImage.h>
 
 @protocol FJBBlurProtocol <NSObject>
 @required

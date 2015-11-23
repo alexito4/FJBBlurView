@@ -6,7 +6,7 @@
 //  Copyright (c) 2014 FJBelchi. All rights reserved.
 //
 
-#import "GPUImageiOSBlurFilter.h"
+#import <GPUImage/GPUImage.h>
 #import "FJBBlurProtocol.h"
 
 @interface GPUImageiOSBlurFilter (FJBBlur) <FJBBlurProtocol>

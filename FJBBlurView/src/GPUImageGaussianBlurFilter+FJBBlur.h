@@ -6,7 +6,7 @@
 //  Copyright (c) 2014 FJBelchi. All rights reserved.
 //
 
-#import "GPUImageGaussianBlurFilter.h"
+#import <GPUImage/GPUImage.h>
 #import "FJBBlurProtocol.h"
 
 @interface GPUImageGaussianBlurFilter (FJBBlur) <FJBBlurProtocol>

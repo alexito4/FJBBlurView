@@ -30,7 +30,7 @@
 {
     [super viewDidLoad];
 	[self.view addSubview:self.photoView];
-    [self.photoView addBlurView];
+    (void)self.photoView.blurView;
     [self.view addSubview:self.blurButton];
     [self.view setNeedsUpdateConstraints];
 }
@@ -131,10 +131,11 @@
 {
     if (self.blurFactor == 16) {
         self.blurFactor = 0.1;
-        [[self.photoView blurView] unBlurAnimated:YES];
+        [[self.photoView blurView] unBlurAnimated:YES withDuration:0.3f];
     } else {
         self.blurFactor = 16;
-        [[self.photoView blurView] blurWithRadius:self.blurFactor animated:YES];
+        self.photoView.blurView.blurRadius = self.blurFactor;
+        [[self.photoView blurView] blurAnimated:YES withDuration:0.3f];
     }
     
 }
